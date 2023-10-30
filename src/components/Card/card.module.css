@@ -1,0 +1,51 @@
+.cardContainer {
+  background-color: white;
+  width: 85%;
+  height: 130px;
+  border-radius: 10px;
+  padding: 2.5%;
+  margin: 4% auto;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.id {
+  color: #c3c4c7;
+}
+.userDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.titleIcon {
+  margin-right: 1%;
+}
+.tagRow {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+}
+.tagIcon {
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.tagContainer {
+  display: flex;
+  padding: auto 4%;
+  justify-content: space-around;
+  align-items: center;
+  width: 56%;
+  border: 1px solid #eaebee;
+  border-radius: 4px;
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bec2c8;
+  margin-top: 1.5%;
+}

@@ -18,6 +18,9 @@
 .padLeft {
   padding-left: 4%;
 }
+.cursorPointer{
+  cursor: pointer;
+}
 
 .columnContent {
   display: flex;

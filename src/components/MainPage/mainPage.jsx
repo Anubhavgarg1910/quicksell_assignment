@@ -9,10 +9,22 @@ import {
 import { ReactComponent as AddIcon } from "../../shared/icons/add.svg";
 import { ReactComponent as DotsIcon } from "../../shared/icons/more_horiz_FILL.svg";
 import { trimTitle } from "../../shared/trimTitle";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MainPage = ({ selectedGrouping, selectedOrdering }) => {
   const data = useData();
   const tickets = data?.tickets;
+  const showFirstToast = () => {
+    toast.info("Add option will be launched soon.", {
+        theme: "dark"
+    });
+  };
+  const showSecondToast = () => {
+    toast.warn("Oops! We are working on edit option.", {
+        theme: "dark"
+    });
+  };
 
   const extractedData = ExtractData();
 
@@ -42,15 +54,15 @@ const MainPage = ({ selectedGrouping, selectedOrdering }) => {
         <div key={index} className={styles.columnContainer}>
           <div className={styles.columnHeader}>
             <div className={styles.headerLeft}>
-              <div>{item.logo}</div>
+              <div className={styles.cursorPointer} onClick={() => toast.success(`${item.name} selected.`)} >{item.logo}</div>
               <div className={styles.padLeft}>{item.name}</div>
               <div className={styles.padLeft}>{item.size}</div>
             </div>
             <div className={styles.headerRight}>
-              <div>
+              <div className={styles.cursorPointer} onClick={showFirstToast}>
                 <AddIcon />
               </div>
-              <div>
+              <div className={styles.cursorPointer} onClick={showSecondToast}>
                 <DotsIcon />
               </div>
             </div>
@@ -115,6 +127,7 @@ const MainPage = ({ selectedGrouping, selectedOrdering }) => {
           </div>
         </div>
       ))}
+      <ToastContainer />
     </>
   );
 };

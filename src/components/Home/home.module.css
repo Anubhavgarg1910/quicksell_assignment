@@ -27,5 +27,14 @@
 @media (max-width: 769px) {
   .columns {
     flex-direction: column;
+    align-items: center;
   }
+  .headerContent {
+    width: 220px;
+    margin-top: 2.5%;
+  }
+}
+.footer {
+  text-align: center;
+  margin: 12px auto;
 }

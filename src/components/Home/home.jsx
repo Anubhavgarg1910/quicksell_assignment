@@ -78,6 +78,16 @@ const Home = () => {
           />
         </div>
       </>
+      <hr />
+      <div className={styles.footer}>
+        Developed by{"\u00a0"}
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/anubhav-garg-9885471b8/"
+        >
+          Anubhav Garg
+        </a>
+      </div>
     </>
   );
 };

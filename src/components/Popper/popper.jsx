@@ -7,13 +7,13 @@ const Popper = ({
   setSelectedOrdering,
 }) => {
   const groupData = [
-    { value: "Status", name: "Status" },
-    { value: "User", name: "User" },
-    { value: "Priority", name: "Priority" },
+    {key:"status", value: "Status", name: "Status" },
+    {key:"user", value: "User", name: "User" },
+    {key:"priority", value: "Priority", name: "Priority" },
   ];
   const orderData = [
-    { value: "Priority", name: "Priority" },
-    { value: "Title", name: "Title" },
+    {key:"priority", value: "Priority", name: "Priority" },
+    {key:"title", value: "Title", name: "Title" },
   ];
 
   return (

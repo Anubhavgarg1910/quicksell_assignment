@@ -23,3 +23,9 @@
   display: flex;
   width: 97%;
 }
+
+@media (max-width: 769px) {
+  .columns {
+    flex-direction: column;
+  }
+}

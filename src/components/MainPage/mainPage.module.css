@@ -1,0 +1,25 @@
+.columnContainer {
+  width: 22%;
+}
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 92.5%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.headerLeft {
+  display: flex;
+  width: 100%;
+}
+.headerRight {
+  display: flex;
+}
+.padLeft {
+  padding-left: 4%;
+}
+
+.columnContent {
+  display: flex;
+  flex-direction: column;
+}

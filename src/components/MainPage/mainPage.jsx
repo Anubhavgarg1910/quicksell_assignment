@@ -17,12 +17,12 @@ const MainPage = ({ selectedGrouping, selectedOrdering }) => {
   const tickets = data?.tickets;
   const showFirstToast = () => {
     toast.info("Add option will be launched soon.", {
-        theme: "dark"
+      theme: "dark",
     });
   };
   const showSecondToast = () => {
     toast.warn("Oops! We are working on edit option.", {
-        theme: "dark"
+      theme: "dark",
     });
   };
 
@@ -54,7 +54,12 @@ const MainPage = ({ selectedGrouping, selectedOrdering }) => {
         <div key={index} className={styles.columnContainer}>
           <div className={styles.columnHeader}>
             <div className={styles.headerLeft}>
-              <div className={styles.cursorPointer} onClick={() => toast.success(`${item.name} selected.`)} >{item.logo}</div>
+              <div
+                className={styles.cursorPointer}
+                onClick={() => toast.success(`${item.name} selected.`)}
+              >
+                {item.logo}
+              </div>
               <div className={styles.padLeft}>{item.name}</div>
               <div className={styles.padLeft}>{item.size}</div>
             </div>
